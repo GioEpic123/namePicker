@@ -3,6 +3,7 @@ document.querySelector('button').addEventListener('click', function() {
     if(names.length > 0) {
         let num = Math.floor(names.length * Math.random());
         let li = document.createElement('li');
+        li.classList.add('slide-in');
         li.textContent = names[num]
         document.querySelector('ul').append(li);
         names.splice(num,1)
